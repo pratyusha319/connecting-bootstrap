@@ -1,0 +1,82 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>classes</title>
+  </head>
+  <body>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images/egg.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Egg stage of butterfly</h5>
+              <p>A butterfly starts life as a very small, round, oval or cylindrical egg.  The coolest thing about butterfly eggs, especially monarch butterfly eggs, is that if you look close enough you can actually see the tiny caterpillar growing inside of it.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/catter.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>cattepillar stage of Butterfly</h5>
+              <p>When the egg finally hatches, most of you would expect for a butterfly to emerge, right?  Well, not exactly.  In the butterfly’s life cycle, there are four stages and this is only the second stage.  Butterfly larvae are actually what we call caterpillars. Caterpillars do not stay in this stage for very long and mostly, in this stage all they do is eat.
+
+                When the egg hatches, the caterpillar will start his work and eat the leaf they were born onto. This is really important because the mother butterfly needs to lay her eggs on the type of leaf the caterpillar will eat..</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/pupa.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>pupa stage of butterfly</h5>
+              <p>The pupa stage is one of the coolest stages of a butterfly’s life.  As soon as a caterpillar is done growing and they have reached their full length/weight, they form themselves into a pupa, also known as a chrysalis.  From the outside of the pupa, it looks as if the caterpillar may just be resting, but the inside is where all of the action is.  Inside of the pupa, the caterpillar is rapidly changing.
+
+                Now, as most people know, caterpillars are short, stubby and have no wings at all.  Within the chrysalis the old body parts of the caterpillar are undergoing a remarkable transformation, called ‘metamorphosis,’ to become the beautiful parts that make up the butterfly that will emerge.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/butterfly.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>final stage of butterfly</h5>
+              <p>Finally, when the caterpillar has done all of its forming and changing inside the pupa, if you are lucky, you will get to see an adult butterfly emerge.  When the butterfly first emerges from the chrysalis, both of the wings are going to be soft and folded against its body. This is because the butterfly had to fit all its new parts inside of the pupa.
+
+                As soon as the butterfly has rested after coming out of the chrysalis, it will pump blood into the wings in order to get them working and flapping – then they get to fly.  Usually within a three or four-hour period, the butterfly will master flying and will search for a mate in order to reproduce.
+                
+                When in the fourth and final stage of their lives, adult butterflies are constantly on the look out to reproduce and when a female lays their eggs on some leaves, the butterfly life cycle will start all over.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
